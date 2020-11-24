@@ -34,7 +34,7 @@ header{
        
         img{
             width: auto;
-            height: 55%;
+            height: 40%;
             padding-right: 0.2em; 
         }
 
@@ -42,9 +42,6 @@ header{
             text-transform: uppercase;
             letter-spacing: 0.1em;
             position: relative;
-            &:nth-child(5){
-                margin-right: 3em;
-            }
             &:after {    
                 background: none repeat scroll 0 0 transparent;
                 bottom: -2;

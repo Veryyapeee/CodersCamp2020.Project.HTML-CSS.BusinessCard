@@ -132,14 +132,12 @@ header{
 /* Section */
 
 article{
-    height: auto;
     width: 100%;
     padding: 2em 3em;
     background: $backgroundArticle;
     color: $font;
-
     display: grid;
-    grid-template-rows: auto auto;
+    grid-template-rows: 1fr 1fr;
 
     .artTop{
         width: 100%;

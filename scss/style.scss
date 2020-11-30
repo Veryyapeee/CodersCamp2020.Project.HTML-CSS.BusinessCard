@@ -407,10 +407,38 @@ footer{
     .footer_social{
         display: grid;
         grid-template-columns: 50% 50%;
+        padding: 1em 2em;
+        font-size: 0.8em;
+        color: $font;
+        letter-spacing: 0.1em;
+    }
+    .social{ 
+        font-weight: bold;
+        a{
+            text-decoration: none;
+            outline: none;
+        }
+        img{
+            margin-top: 10px;
+            width: 12px;
+            height: auto;
+        }
+    }
+    .adress{
+        span{
+            display: block;
+        }
+        span:first-child{
+            font-weight: bold;
+        }
     }
 
     .copyright{ 
-        
+        text-align: center;
+        color: $font;
+        padding: 1em 0;
+        letter-spacing: 0.1em;
+        font-size: 0.6em;
     }
 
 }

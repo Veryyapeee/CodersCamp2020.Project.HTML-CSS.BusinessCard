@@ -12,7 +12,7 @@ $colorSpecia: #330525;
     font-family: 'Roboto';
 }
 *:root{
-    font-size: 16px; 
+    font-size: 14px; 
 }
 body{margin: 0; padding: 0; background: $background;}
 
@@ -25,6 +25,40 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background: #444;
   border-radius: 4px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+h2, h3{
+    color: $font;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+
+button{
+               
+    border: 3px solid $fontHover;
+    border-radius: 20px;
+    color: $font;
+    font-size: 0.7em;
+    font-weight: bold;
+    text-decoration: none;
+    background: transparent;
+    padding: 0.7em 2em;
+    outline: none;
+    -webkit-transition: background 1s, color 1s;
+    
+    &:hover{
+        cursor: pointer;
+        background: $fontHover;
+        color: $backgroundHeader;
+        transition-property: all;
+        transition-duration: 1s;
+        transition-timing-function: ease-in;
+    }
 }
 
 
@@ -114,28 +148,6 @@ header{
             display: flex;
             justify-content: center;
             align-items: flex-start;
-            button{
-               
-                border: 3px solid $fontHover;
-                border-radius: 20px;
-                color: $font;
-                font-size: 0.7em;
-                font-weight: bold;
-                text-decoration: none;
-                background: transparent;
-                padding: 0.7em 2em;
-                outline: none;
-                -webkit-transition: background 1s, color 1s;
-                
-                &:hover{
-                    cursor: pointer;
-                    background: $fontHover;
-                    color: $backgroundHeader;
-                    transition-property: all;
-                    transition-duration: 1s;
-                    transition-timing-function: ease-in;
-                }
-            }
             button+button{
                 margin-left: 32px;
             }
@@ -249,6 +261,64 @@ article{
 
 }
 
+/* Portoflio */
+.port_header{
+    background: $backgroundArticle;
+    padding: 2em 3em;
+}
+section{
+    background: $backgroundArticle;
+    width: 100%;
+    .container{
+    display: grid;
+    grid-template-rows: repeat(4,auto);
+    padding: 2em 3em;
+    grid-gap: 8px;
+    margin: 0 auto;
+    max-width: 1500px;
+        div{
+            height: 250px;
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+            padding: 1em 2em;
+            span:nth-child(1){
+                font-size: 0.9em;
+                color: $font;
+                font-weight: bold;
+                letter-spacing: 0.1em;
+                display: block;
+            }
+            span{
+                font-size: 0.6em;
+                color: $font;
+                letter-spacing: 0.1em;
+            }
+            button{
+                margin-top: 8px;
+                font-size: 0.6em;
+            }
+        }
+        .port_1{
+            background-image:  url('../img/port4.png');
+        }
+
+        .port_2{
+            background-image: url('../img/port2.jpg');
+        }
+
+        .port_3{
+            background-image: url('../img/port3.jpg');
+        }
+
+        .port_4{
+            background-image: url('../img/port1.png');
+        }
+    }
+    
+
+}
+
 
 
 /* Media query's */
@@ -301,6 +371,27 @@ article{
         left: 50%;
         transform: translateX(-50%);
     }
+
+    section .container{
+        grid-template-columns: 30% 30% 40%;
+        grid-template-rows: auto 250px 320px;
+        .port_1{
+            grid-column: span 3;
+        }
+        h2{
+            grid-column: span 3;
+        }
+    }
+}
+
+@media screen and (min-width: 900px){
+    section{
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto auto;
+        h2{
+            grid-column:span 2;
+        }
+    }
 }
 
 /*Keyframes*/
@@ -325,3 +416,4 @@ article{
     0%{left: -1000px}
     100%{left: 0;}
 }
+

@@ -16,8 +16,8 @@
             <img src="img/logo.png" alt="Logo">
             <a href='#aboutContent' class="links">About us</a>
             <a href='#artBottom' class="links">Skills</a>
-            <a class="links">Portfolio</a>
-            <a class="links">Contact</a>
+            <a href='#portfolio' class="links">Portfolio</a>
+            <a href='#contact' class="links">Contact</a>
         </nav>
         <div class="main">
 
@@ -84,7 +84,7 @@
     </article>
 
 
-    <section>
+    <section id='portfolio'>
         <div class="container">
             <h2>Portfolio</h2>
             <div class="port_1">
@@ -112,8 +112,36 @@
     </section>
 
 
+    <div id='contact'>
+        <h2>Contact us!</h2>
+        <div class='form'>
+            <div class='form_intro'>
+                Na co czekasz, skontaktuj się z nami już teraz!
+            </div>
+            <div class="form_action">
+                <form action="form.php">
+                    <span>Wpisz tutaj swój e-mail zwrotny.</span>
+                    <input type="email" placeholder="example@gmail.com" required> <br>
+                    <span>Tutaj wpisz treść wiadomości.</span>
+                    <input type="text" placeholder='Treść wiadomości...' required> <br>
+                    <input type="submit"> <br>
+                </form>
+            </div>
+        </div>
+    </div>
+
     <footer>
-        Kontakt
+        <div class="footer_social">
+            <div class="social">
+                Social media
+            </div>
+            <div class="adress">
+                Adres siedziby
+            </div>
+        </div>
+        <div class="copyright">
+            Copyrights &copy Awot
+        </div>
     </footer>
 
 </body>

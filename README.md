@@ -17,5 +17,8 @@ free polish programming course - CodersCamp!
 - Just download the files from Github and run index.html file.
 
 ## Demo link
+- https://veryyapeee.github.io/CodersCamp2020.Project.HTML-CSS.BusinessCard/
 
 ## Sources
+- Desing - https://www.figma.com/file/WHtiMfcNHt4tc7mDamNBYa/CodersCamp2020-Wizytowka?node-id=0%3A1
+- Images - https://www.flaticon.com/
